@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Bridge } from "@/components/home/bridge";
-import { DataTabs } from "@/components/home/data-tabs";
 import { Ledger } from "@/components/home/ledger";
 import { RecordCards } from "@/components/home/record-cards";
 import { ArrowRight, Info, Lock } from "@/components/icons";
@@ -81,11 +80,6 @@ export default function Home() {
         <div className="flex h-12 items-center justify-end border-b border-line px-4">
           <MonoLink href="/business#how">See how it works</MonoLink>
         </div>
-      </section>
-
-      <section className="border-t border-line pt-[100px]">
-        <SectionIntro title="Where it lives" className="mb-12" />
-        <DataTabs />
       </section>
 
       <section className="border-t border-line pt-[100px]">
