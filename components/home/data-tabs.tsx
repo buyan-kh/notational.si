@@ -74,21 +74,7 @@ export function DataTabs() {
       </div>
 
       <div className="bg-th/[.035] px-6 py-10 sm:px-[55px]">
-        <div className="flex flex-wrap items-center gap-1">
-          {categories.map((c, i) => (
-            <button
-              key={c.id}
-              onClick={() => setActive(i)}
-              className={`rounded-[3px] px-1.5 py-0.5 font-serif text-[15px] transition-colors ${
-                i === active ? "bg-th/[.12] text-ink" : "text-ink/80 hover:text-ink"
-              }`}
-            >
-              {c.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+        <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
             <p className="mono-label text-th-700">0{active + 1} / 05</p>
             <h3 className="mt-2 font-serif text-[22px] text-ink">{cat.label}</h3>

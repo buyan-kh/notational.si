@@ -6,8 +6,8 @@ export function SiteHeader() {
     <header className="bg-white">
       <div className="mx-auto flex h-[56px] max-w-[1470px] items-center justify-between px-6 lg:px-[95px]">
         <div className="flex items-center gap-6">
-          <Link href="/" aria-label="notational home">
-            <Logo />
+          <Link href="/" aria-label="notational home" className="inline-flex items-center leading-none">
+            <Logo className="[&_span]:translate-y-[2px]" />
           </Link>
           <Link href="/refer" className="hidden items-center gap-2 text-[14px] text-ink/80 hover:text-ink sm:inline-flex">
             <span className="size-1.5 bg-th" />

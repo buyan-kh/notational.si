@@ -4,7 +4,6 @@ import { DataTabs } from "@/components/home/data-tabs";
 import { Ledger } from "@/components/home/ledger";
 import { RecordCards } from "@/components/home/record-cards";
 import { ArrowRight, Info, Lock } from "@/components/icons";
-import { Marquee } from "@/components/marquee";
 import { Notation } from "@/components/notation";
 import { PageShell } from "@/components/page-shell";
 import { MonoLink, PrimaryButton, SectionIntro, Toolbar } from "@/components/ui";
@@ -189,8 +188,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Marquee items={["Nothing moves until you sign"]} />
     </PageShell>
   );
 }
